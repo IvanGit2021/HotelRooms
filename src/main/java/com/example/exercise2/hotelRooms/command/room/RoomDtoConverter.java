@@ -13,10 +13,11 @@ import java.util.List;
 
 public class RoomDtoConverter {
 
-    public static RoomDto convertToDto (RoomDtoModel room) {
+    public static RoomDto convertToDto (Room room) {
         return RoomDto.builder()
                 .roomNumber(room.getRoomNumber())
                 .hotelName(room.getHotelName())
+                .capacity(room.getCapacity())
                 .guests(room.getGuests())
                 .build();
     }
@@ -25,6 +26,7 @@ public class RoomDtoConverter {
         return Room.builder()
                 .roomNumber(room.getRoomNumber())
                 .hotelName(room.getHotelName())
+                .capacity(room.getCapacity())
                 .guests(room.getGuests())
                 .build();
     }

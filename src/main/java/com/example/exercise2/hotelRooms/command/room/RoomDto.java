@@ -13,5 +13,6 @@ public class RoomDto {
 
     private Integer roomNumber;
     private String hotelName;
+    private Integer capacity;
     private List<Person> guests;
 }

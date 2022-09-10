@@ -17,6 +17,7 @@ public class Room {
     private Integer id;
     private Integer roomNumber;
     private String hotelName;
+    private Integer capacity;
     @OneToMany(mappedBy = "room")
     private List<Person> guests;
 
